@@ -29,6 +29,7 @@ body {
     width: 100vw;
     height: 100vh;
     color: var(--main-fontColor);
+    font-family: var(--main-fontFamily);
 }
 
 .logo {
@@ -96,7 +97,7 @@ td {
     padding: 4px;
 }
 #result table tr td:first-child {
-    width:80px ;
+    width:100px ;
     text-align: right;
 }
 
