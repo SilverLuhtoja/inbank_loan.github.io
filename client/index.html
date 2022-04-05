@@ -4,36 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <script src="/app.js" defer></script>
     <title>InBank Loan</title>
 </head>
 <body class="flex">
     <div class="wrapper">
-        <div class="logo"><img src="https://roofit.solar/wp-content/uploads/2020/06/Inbank-logo.jpg" alt=""></div>
+        <div class="logo">
+            <img src="https://roofit.solar/wp-content/uploads/2020/06/Inbank-logo.jpg" alt="">
+        </div>
         <div class="flex">
             <table>
                 <tbody>
                     <tr>
-                        <td> <label for="personal_code">personal_code :</label></td>
-                        <td><input class="personal_code_input"  type="text" name="code" required  autocomplete="off" placeholder="49002010965"> </td>
+                        <td> <label for="personal_code">personal code :</label></td>
+                        <td><input class="personal_code_input"  type="text" name="code" required  autocomplete="off" placeholder="personal code"> </td>
                     </tr>
                     <tr>
                         <td> <label for="months">months :</label></td>
-                        <td><input class="months_input" type="number" min="12" max="60"  name="months" required  autocomplete="off" placeholder="12">  </td>
+                        <td><input class="months_input" type="number" min="12" max="60"  name="months" required  autocomplete="off" placeholder="period">  </td>
                     </tr>
                     <tr>
                         <td>  <label for="amount">amount :</label></td>
-                        <td><input class="amount_input" type="number" min="2000" max="10000"  name="amount" required autocomplete="off" placeholder="2000">  </td>
+                        <td><input class="amount_input" type="number" min="2000" max="10000"  name="amount" required autocomplete="off" placeholder="amount ">  </td>
                     </tr>
                 </tbody>
             </table>
-        <button type="submit" id="submit">Submit</button>
-    </div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
 
-    <div id="result"> RESULT 
+    <div id="result" class="flex hide"> 
+        <table>
+            <tbody>
+                <tr>
+                    <td> approved :</td>
+                    <td><span id="approved"></span> </td>
+                </tr>
+                <tr>
+                    <td> message :</td>
+                    <td><span id="message"></span> </td>
+                </tr>
+                <tr>
+                    <td> period :</td>
+                    <td><span id="period"></span> </td>
+                </tr>
+                <tr>
+                    <td> amount :</td>
+                    <td><span id="amount"></span> </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
 </div>
 </body>
 </html>
