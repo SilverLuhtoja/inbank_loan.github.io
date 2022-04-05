@@ -54,6 +54,7 @@ export default class loan_service {
       if (loanAmount > 10000) {
         loan.amount = 10000;
       }
+      loan.amount = loanAmount
       loan.message = `Maximum loan is ${loanAmount > 10000 ? 10000 : loanAmount} with time period of ${period}`;
       return loan;
     }
