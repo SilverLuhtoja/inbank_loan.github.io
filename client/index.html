@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+    <title>InBank Loan</title>
+</head>
+<body class="flex">
+    <div class="wrapper">
+        <div class="logo"><img src="https://roofit.solar/wp-content/uploads/2020/06/Inbank-logo.jpg" alt=""></div>
+        <div class="flex">
+            <table>
+                <tbody>
+                    <tr>
+                        <td> <label for="personal_code">personal_code :</label></td>
+                        <td><input class="personal_code_input"  type="text" name="code" required  autocomplete="off" placeholder="49002010965"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="months">months :</label></td>
+                        <td><input class="months_input" type="number" min="12" max="60"  name="months" required  autocomplete="off" placeholder="12">  </td>
+                    </tr>
+                    <tr>
+                        <td>  <label for="amount">amount :</label></td>
+                        <td><input class="amount_input" type="number" min="2000" max="10000"  name="amount" required autocomplete="off" placeholder="2000">  </td>
+                    </tr>
+                </tbody>
+            </table>
+        <button type="submit" id="submit">Submit</button>
+    </div>
+
+    <div id="result"> RESULT 
+    </div>
+
+</div>
+</body>
+</html>

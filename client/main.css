@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+    --main-color: #2b0a57;
+    --background-color: whitesmoke;
+    --second-color: #ece8e8;
+    --notification-color :#e29c27;
+
+    --main-fontFamily: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    --main-fontColor: #333;
+
+    --radius: 10px ;
+}
+
+.suggestion{
+    background-color: var(--notification-color);
+    color: var(--main-fontColor);
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 12px;
+    position: relative;
+    z-index: 10;
+    top: -44px;
+    left: 60px;
+    width: 120px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    /* flex-wrap: wrap; */
+    position: relative;
+    flex-direction: column;
+    
+}
+body{
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    color: var(--main-fontColor);
+}
+.logo{
+    background-color: #2b0a57;
+    width: 100%;
+    padding: 4px 4px  0 4px;
+}
+.logo img{
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+}
+
+.wrapper{
+    width: 300px;
+    height: 400px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 20px black;
+    
+    /* border-radius: var(--radius); */
+}
+form{
+    width: 100%;
+    height: 60%;
+    padding: 1em;
+    /* background-color: rgb(158, 140, 94); */
+}
+
+.months input, .amount input, .personal_code input{
+    position: relative;
+    width: 100px;
+    height: 20px;
+}
+/* .months::after{
+    content:"12-60 months...";
+    font-size: 10px;
+    color: #828282;
+    position: absolute;
+    transform: translate(-76px,8px);
+} */
+
+
+form div {
+    margin: 0.75em;
+}
